@@ -2,17 +2,17 @@
 
 ---
 
-## 项目简介
-本仓库为3D 点云语义分割论文核心组件实现，仅包含论文提出的 EAF-Net 与 DWS核心代码，可集成到现有 3D 点云语义分割框架中作为模块使用。
+## Project Introduction
+This repository contains the core component implementation of the 3D point cloud semantic segmentation paper, including only the core code of EAF-Net and DWS proposed in the paper. It can be integrated into existing 3D point cloud semantic segmentation frameworks as a module.
 ---
 
-## 环境依赖
+## Environment Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 ---
 
-## 目录结构
+## Directory Structure
 ```
 .
 ├── DWS.py              
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 ---
 
-## 注意事项
-- 代码基于 **TensorFlow 1.x** 开发，已禁用TF2.x行为
-- 需提前编译C++扩展
-- 显存不足可调小 `batch_size` / `num_points` 参数
+## Notes
+- The code is developed based on TensorFlow 1.x, and TF2.x behaviors have been disabled.
+- The C++ extension needs to be compiled in advance.
+- If the video memory is insufficient, adjust the batch_size / num_points parameters to smaller values.
